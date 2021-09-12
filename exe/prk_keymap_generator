@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+require_relative '../lib/prk_keymap_generator.rb'
+
+cmd = PrkKeymapGenerator::Command.new
+cmd.execute!
