@@ -143,7 +143,7 @@ module PrkKeymapGenerator
 
         another_layers = @layers.keys[1..-1]
         another_layers.each do |layer_name|
-          fp.puts "kbd.define_mod_key :#{layer_name.upcase}, [ :KC_NO, :#{layer_name}, 120, 150 ]" 
+          fp.puts "kbd.define_mode_key :#{layer_name.upcase}, [ :KC_NO, :#{layer_name}, 120, 150 ]" 
         end
 
         fp.puts <<~EOF
