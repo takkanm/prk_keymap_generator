@@ -117,10 +117,6 @@ module PrkKeymapGenerator
       # TODO: ERB
       File.open('keymap.rb', 'w') do |fp|
         fp.puts <<~EOS
-          while !$mutex
-            relinquish
-          end
-
           kbd = Keyboard.new
 
           kbd.split = #{@is_split}
